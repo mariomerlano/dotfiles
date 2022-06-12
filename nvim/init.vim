@@ -76,8 +76,6 @@ Plug 'dyng/ctrlsf.vim'
 call plug#end()
 
 
-" OneDark Theme Settings (https://github.com/joshdick/onedark.vim)
-let g:onedark_terminal_italics = 1
 " if (has("autocmd"))
 "   augroup colorextend
 "     autocmd!
@@ -104,6 +102,7 @@ endif
 
 "   colorscheme gruvbox
 "   let g:gruvbox_contrast_dark = /"hard/"
+let g:onedark_terminal_italics = 1
 colorscheme onedark
 " colorscheme nord
 
