@@ -39,3 +39,14 @@ vim.bo.expandtab = true
 vim.bo.shiftwidth = 2
 vim.bo.softtabstop = 2
 
+-- basic config
+opt.number = true
+opt.mouse = 'a'
+cmd('set numberwidth=1')
+opt.clipboard = 'unnamed'
+
+opt.cursorline = true
+g.showmatch = true
+cmd('set sw=2')
+cmd('set relativenumber')
+cmd('set laststatus=2')
