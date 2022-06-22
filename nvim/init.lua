@@ -13,8 +13,8 @@ require('packer').startup(function(use)
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
   -- Colorscheme
-  use 'marko-cerovac/material.nvim'
-  -- use 'Mofiqul/vscode.nvim'
+  -- use 'marko-cerovac/material.nvim'
+  use 'Mofiqul/vscode.nvim'
 
 end)
 
@@ -31,9 +31,9 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
-vim.g.material_style = "darker"
-vim.cmd 'colorscheme material'
--- vim.cmd 'colorscheme vscode'
+-- vim.g.material_style = "darker"
+-- vim.cmd 'colorscheme material'
+vim.cmd 'colorscheme vscode'
 
 vim.bo.expandtab = true
 vim.bo.shiftwidth = 2
