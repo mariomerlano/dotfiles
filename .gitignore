@@ -1,9 +1,8 @@
 # Ignore everything 
-/*
-/*/
-/nvim/plugin/
+# /*
+# /*/
 
 # Except these files
-!.gitignore
-!/nvim/
+# !.gitignore
+# !/nvim/
 
