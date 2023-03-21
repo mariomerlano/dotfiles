@@ -129,7 +129,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 8.0
+  size: 16.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -731,6 +731,9 @@ cursor:
 # in the order they were defined in.
 key_bindings:
   - { key: Return,   mods: Control|Shift, action: SpawnNewInstance } # Keep same directory when a new terminal instance is spawned
+  - { key: C, mods: Control, action: Copy } # Copy with Control + c
+  - { key: V, mods: Control, action: Paste } # Paste with Control + v
+  - { key: C, mods: Control|Shift, chars: "\x03" } # binding to enable copy/paste with just control and without shift 
   #- { key: Paste,                                       action: Paste          }
   #- { key: Copy,                                        action: Copy           }
   #- { key: L,         mods: Control,                    action: ClearLogNotice }
