@@ -63,7 +63,7 @@ alias cat='bat'
 # Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh-sudo/sudo.plugin.zsh
+source /usr/share/zsh/plugins/zsh-sudo/sudo.plugin.zsh
 
 # Functions
 function mkt(){
@@ -126,12 +126,11 @@ function rmk(){
 # Finalize Powerlevel10k instant prompt. Should stay at the bottom of ~/.zshrc.
 (( ! ${+functions[p10k-instant-prompt-finalize]} )) || p10k-instant-prompt-finalize
 
-################# START PowerLevel10k #############
-
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
 bindkey "^[[H" beginning-of-line # go to the beginning of the command when pressing Inicio
 bindkey "^[[F" end-of-line # go to the end of the command when pressing Fin
 bindkey "^[[3~" delete-char # delete ahead char when pressing Supr
 bindkey "^[[1;3C" forward-word # jump between words when pressing Alt + right arrow key
 bindkey "^[[1;3D" backward-word # jump between words when pressing Alt + left arrow key
+
+################# START PowerLevel10k #############
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
