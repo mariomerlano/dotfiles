@@ -13,7 +13,6 @@ Config {
    -- layout
    , sepChar =  "%"   -- delineator between plugin names and straight text
    , alignSep = "}{"  -- separator between left-right alignment
-   -- (old template) , template = "%battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% }{ %RJTT% | %date% || %kbd% "
    , template = "%battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% }{ %date% || %kbd% "
 
    -- general behavior
@@ -40,10 +39,6 @@ Config {
    --   see http://projects.haskell.org/xmobar/#system-monitor-plugins.
    , commands = 
         [
-
-        -- weather monitor
-        -- Run Weather "RJTT" [ "--template", "<skyCondition> | <fc=#4682B4><tempC></fc>°C | <fc=#4682B4><rh></fc>% | <fc=#4682B4><pressure></fc>hPa"
-        --                     ] 36000
 
         -- network activity monitor (dynamic interface resolution)
         Run DynNetwork     [ "--template" , "<dev>: <tx>kB/s|<rx>kB/s"
